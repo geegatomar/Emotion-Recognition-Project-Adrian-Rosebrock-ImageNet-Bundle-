@@ -3,7 +3,7 @@ These are the main files in the project:
 1. build_dataset.py  </br>
 This file converts the .csv file data obtained from kaggle into .hdf5 file format </br>
 To run: </br>
-     ` python build_dataset.py `
+     ` python build_dataset.py ` </br>
      
 2. emotion_vggnet.py </br>
 This file contains the main model which is inspired from vggnet </br>
@@ -17,9 +17,9 @@ To run: </br>
 4. test_recognizer.py </br>
 Once training is complete, the model is saved as .hdf5 file onto the disk in the checkpoints folder. Then we can evaluate our model performance by running this script </br>
 To run: </br>
-      `python test_recognizer.py --model checkpoints/epoch_75.hdf5`
+      `python test_recognizer.py --model checkpoints/epoch_75.hdf5` </br>
       
-5. realtime_emotion_detector.py
-This is the final fruit of the project which can detect emotions in the webcam captured video or a video file provided by user.
-To run:
+5. realtime_emotion_detector.py </br>
+This is the final fruit of the project which can detect emotions in the webcam captured video or a video file provided by user. </br>
+To run: </br>
       `python emotion_detector.py --cascade haarcascade_frontalface_default.xml --model checkpoints/epoch_75.hdf5`
