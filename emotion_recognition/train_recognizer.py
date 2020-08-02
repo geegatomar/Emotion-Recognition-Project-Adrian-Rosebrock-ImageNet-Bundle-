@@ -73,7 +73,7 @@ model.fit_generator(
     steps_per_epoch=trainGen.numImages // config.BATCH_SIZE,
     validation_data=valGen.generator(),
     validation_steps=valGen.numImages // config.BATCH_SIZE,
-    epochs=15,
+    epochs=75,
     max_queue_size=config.BATCH_SIZE * 2,
     callbacks=callbacks, verbose=1)
 

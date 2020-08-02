@@ -1,7 +1,7 @@
 # import the necessary packages
 from config import emotion_config as config
 from processor.image_to_array_preprocessor import ImageToArrayPreprocessor
-from pprocessor.hdf5_dataset_generator import HDF5DatasetGenerator
+from processor.hdf5_dataset_generator import HDF5DatasetGenerator
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import load_model
 import argparse
